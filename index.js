@@ -67,7 +67,7 @@ const itemResolver = {
    },
   Mutation: {
 	addItem(root, {id, name, quantity, price, supplier_id}, context){
-		const item = {id : id, name : name, price : price, supplier_id : supplier_id}
+		const item = {id : id, name : name, quantity : quantity,  price : price, supplier_id : supplier_id}
 		itemMocks.push(item)
 		return item
 	}
